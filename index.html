@@ -11,14 +11,19 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/1dd3772d5e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Header Start  -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-light py-lg-3 mt-lg-3">
+      <nav class="navbar navbar-expand-lg bg-light py-2 mt-3">
         <div class="container-fluid mx-lg-5">
           <p
-            class="navbar-brand fw-semibold fs-4 w-75 px-lg-5 mx-lg-5"
+            class="navbar-brand fw-semibold fs-4 w-75 px-lg-5 mx-lg-5 fw-bold"
             href="#"
           >
             Abacus Convention Center
@@ -52,10 +57,7 @@
           </div>
         </div>
       </nav>
-    </header>
-    <!-- Header end  -->
-
-    <main>
+      <!-- slider start -->
       <section>
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
@@ -63,7 +65,7 @@
               type="button"
               data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="0"
-              class="active"
+              class="active px-3 border border-1 rounded"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -71,18 +73,21 @@
               type="button"
               data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="1"
+              class="px-3 border border-1 rounded"
               aria-label="Slide 2"
             ></button>
             <button
               type="button"
               data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="2"
+              class="px-3 border border-1 rounded"
               aria-label="Slide 3"
             ></button>
             <button
               type="button"
               data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="3"
+              class="px-3 border border-1 rounded"
               aria-label="Slide 4"
             ></button>
           </div>
@@ -170,7 +175,10 @@
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span
+              class="carousel-control-prev-icon p-4"
+              aria-hidden="true"
+            ></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button
@@ -179,30 +187,42 @@
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span
+              class="carousel-control-next-icon p-4"
+              aria-hidden="true"
+            ></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
       </section>
-      <section class="container m-5">
-        <div class="card mb-3 border-0" style="max-width: 82%">
-          <div class="row g-0">
-            <div class="col-md-5">
-              <img
-                src="images/wedding.png"
-                class="img-fluid rounded-start w-100 h-100"
-                alt="..."
-              />
+      <!-- slider end -->
+    </header>
+    <!-- Header end  -->
+    <main>
+      <section class="container my-5">
+        <div class="container overflow-hidden">
+          <div class="row gx-3">
+            <div class="col-lg-6 col-sm-12">
+              <div class="p-3">
+                <img
+                  src="images/wedding.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
             </div>
-            <div class="col-md-7 pt-3">
-              <div class="card-body">
-                <h2 class="card-title fw-bold">Every moment is Precious</h2>
-                <p class="card-text fs-6 fw-bold py-2">
+            <div class="col-lg-6 col-sm-12">
+              <div class="py-4 my-5 d-flex flex-column" style="width: 90%">
+                <h1 class="card-title fw-bold">Every moment is Precious</h1>
+                <p class="fs-6 fw-bold text-body-secondary py-3">
                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                   amet sint. Velit officia consequat duis enim velit mollit.
                   Exercitation veniam consequat sunt nostrud amet.
                 </p>
-                <a href="#" class="btn btn-primary">Explore our album</a>
+                <a href="#" class="btn btn-primary w-50 rounded-0 fw-bold px-0">
+                  Explore our album
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
               </div>
             </div>
           </div>
